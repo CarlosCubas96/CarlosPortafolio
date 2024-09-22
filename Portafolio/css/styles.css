@@ -1,0 +1,86 @@
+/* Configuración general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h4 {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: "Helvetica", "Fabric Sans", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "announcement-bar"
+    "header"
+    "projects"
+    "categories"
+    "about"
+    "contact"
+    "footer";
+}
+
+.announcement-bar {
+  grid-area: announcement-bar;
+  width: 100%;
+  height: 30px;
+  background-color: #faf3f2;
+  text-align: center;
+}
+
+announcement-bar header {
+  grid-area: header;
+  padding: 20px;
+  background-color: #007af5;
+  text-align: center;
+}
+
+#projects {
+  grid-area: projects;
+  padding: 40px 20px;
+  background-color: #fc4c00;
+}
+
+#categories {
+  grid-area: categories;
+  padding: 40px 20px;
+  background-color: #bfff00;
+}
+
+#about {
+  grid-area: about;
+  padding: 40px 20px;
+  background-color: #37ff00;
+}
+
+#contact {
+  grid-area: contact;
+  padding: 40px 20px;
+  background-color: #f700ff;
+}
+
+footer {
+  grid-area: footer;
+  padding: 20px;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+}
