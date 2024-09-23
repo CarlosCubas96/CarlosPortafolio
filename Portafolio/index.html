@@ -1,63 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carlos Cubas Lorca</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link
-      rel="icon"
-      href="assets/icons/favicons/favicon.ico"
-      type="image/x-icon"
-    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carlos Cubas Lorca</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+  <link rel="icon" href="assets/icons/favicons/favicon.ico" type="image/x-icon" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <aside class="announcement-bar">
-      <h4>ARCHIVE SALE. OLD SEASONS. 3 DAYS AND 1:3:27</h4>
-    </aside>
+  <link rel="stylesheet" href="css/styles.css">
 
-    <header>
-      <div class="banner">
-        <h3>TRUSTED BY THE PRO'S</h3>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <style>
+    .font-bebas {
+      font-family: 'Bebas Neue', sans-serif;
+    }
+
+    .font-h4 {
+      font-family: 'Rajdhani', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="font-sans grid grid-cols-1 gap-0">
+
+  <!-- aside -->
+  <aside class="announcement-bar flex items-center justify-center w-full h-8 bg-[#e4e2dd]">
+    <h4 class="font-h4 font-semibold">ARCHIVE SALE. OLD SEASONS. 3 DAYS AND 1:3:27</h4>
+    <h3 class="font-rajdhani font-light text-white">TRUSTED BY THE PRO'S</h3>
+  </aside>
+
+
+  <!-- Header -->
+  <header class="inline-block items-center justify-between p-3 w-full h-screen">
+    <div class="flex items-center w-full justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img class="banner-logo" src="assets/logos/logo_banner.png" alt="CCL">
       </div>
-    </header>
 
-    <section id="projects" class="projects">
-      <div class="project-grid">
-        <article class="project-card"></article>
+      <!-- Navigation -->
+      <nav class="space-x-4">
+        <ul class="flex ">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a><span>NEW</span></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
-        <article class="project-card"></article>
-      </div>
-    </section>
+    <h1 class="text-4xl text-white font-bebas">Fullscreen Banner Content</h1>
+  </header>
 
-    <section id="categories" class="categories">
-      <div class="category-grid">
-        <article class="category-card"></article>
 
-        <article class="category-card"></article>
-      </div>
-    </section>
+  <section id="projects" class="projects py-10 px-5 bg-[#FC4C00]">
+    <div class="project-grid grid grid-cols-1 gap-5">
+      <article class="project-card border border-gray-300 p-4 rounded"></article>
+      <article class="project-card border border-gray-300 p-4 rounded"></article>
+    </div>
+  </section>
 
-    <section id="about" class="about">
-      <div class="about-content"></div>
-    </section>
+  <section id="categories" class="categories py-10 px-5 bg-[#BFFF00]">
+    <div class="category-grid grid grid-cols-1 gap-5">
+      <article class="category-card border border-gray-300 p-4 rounded"></article>
+      <article class="category-card border border-gray-300 p-4 rounded"></article>
+    </div>
+  </section>
 
-    <section id="contact" class="contact"></section>
+  <section id="about" class="about py-10 px-5 bg-[#37FF00]">
+    <div class="about-content border border-gray-300 p-4 rounded"></div>
+  </section>
 
-    <footer>
-      <p>&copy; addddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
-    </footer>
-  </body>
+  <section id="contact" class="contact py-10 px-5 bg-[#F700FF]"></section>
+
+  <footer class="p-5 bg-gray-800 text-white text-center">
+    <p>&copy; addddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
+  </footer>
+</body>
+
 </html>
