@@ -16,6 +16,9 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
+
+  <script src="https://kit.fontawesome.com/926d8b1ae3.js" crossorigin="anonymous"></script>
+
   <style>
     .font-bebas {
       font-family: 'Bebas Neue', sans-serif;
@@ -25,6 +28,8 @@
       font-family: 'Rajdhani', sans-serif;
     }
   </style>
+
+
 </head>
 
 <body class="font-sans grid grid-cols-1 gap-0">
@@ -37,27 +42,56 @@
 
 
   <!-- Header -->
-  <header class="inline-block items-center justify-between p-3 w-full h-screen">
-    <div class="flex items-center w-full justify-between">
+  <header class="flex items-center justify-between p-3 w-full bg-white">
+    <!-- Logo y Primer Navigation -->
+    <div class="flex items-center">
       <!-- Logo -->
-      <div class="flex items-center">
+      <div class="mr-8">
         <img class="banner-logo" src="assets/logos/logo_banner.png" alt="CCL">
       </div>
 
-      <!-- Navigation -->
+      <!-- Primer Navigation -->
       <nav class="space-x-4">
-        <ul class="flex ">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Projects</a><span>NEW</span></li>
-          <li><a href="#">Categories</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="flex space-x-4">
+          <li class="relative">
+            <a href="#" class="hover:text-blue-500 pl-2">Projectos</a>
+            <span class="ml-3 px-2 py-1 text-xs text-white bg-red-500 rounded-full">NEW</span>
+          </li>
+          <li><a href="#" class="hover:text-blue-500">Categorias</a></li>
+          <li><a href="#" class="hover:text-blue-500">Sobre mí</a></li>
+          <li><a href="#" class="hover:text-blue-500">Contacto</a></li>
         </ul>
       </nav>
     </div>
 
-    <h1 class="text-4xl text-white font-bebas">Fullscreen Banner Content</h1>
+    <!-- Segundo Navigation (Alineado a la Derecha) -->
+    <div class="ml-auto flex items-center space-x-6">
+
+      <!-- Search Bar with Lupa Icon -->
+      <div class="relative">
+
+        <i class="fas fa-info-circle"></i>
+        <i class="fa-thin fa-magnifying-glass"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+      </div>
+
+      <!-- Button to View Online Store -->
+      <button class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">
+        Ver tienda online
+      </button>
+
+    </div>
+
   </header>
+
+  <!-- Fullscreen Banner -->
+  <div id="banner" class="h-screen w-full flex items-center justify-center bg-gray-900">
+    <!-- Banner content -->
+  </div>
+
+
+
 
 
   <section id="projects" class="projects py-10 px-5 bg-[#FC4C00]">
