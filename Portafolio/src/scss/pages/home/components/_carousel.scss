@@ -1,0 +1,36 @@
+.scroll {
+    grid-area: brand-carousel;
+    position: relative;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent, #fff 10%, #fff 90%, transparent);
+}
+
+.scroll div {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: animate 50s linear infinite;
+}
+
+.scroll div img {
+    width: 80px;
+    margin: 0 60px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.scroll:hover div {
+    animation-play-state: paused;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

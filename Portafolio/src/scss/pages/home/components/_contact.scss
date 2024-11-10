@@ -1,0 +1,53 @@
+.contact {
+    grid-area: contact;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    background-image: url("/src/assets/images/conctact-mart.jpg");
+}
+
+.projects::after {
+    content: "cdcf";
+    position: absolute;
+    top: 1000%;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .1), #faf3f2);
+    border-radius: 10px 5px 0 0;
+}
+
+
+.contact-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0) 100%);
+ 
+}
+
+.contact-text {
+    z-index: 1;
+    max-width: 40%;
+}
+
+.contact-text .subheading {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.contact-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,22 @@
+// Base files
+@use "./base/global";
+@use "./base/variables";
+
+// Layout
+@use "./layout/announcement-bar";
+@use "./layout/footer";
+@use "./layout/header";
+
+// Components
+@use "./components/buttons";
+@use "./components/tags";
+
+
+
+// Components from the home page
+@use "./pages/home/components/about";
+@use "./pages/home/components/banner";
+@use "./pages/home/components/carousel";
+@use "./pages/home/components/categories";
+@use "./pages/home/components/contact";
+@use "./pages/home/components/projects";

@@ -1,0 +1,55 @@
+.about {
+  grid-area: about;
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.about-text {
+  display: flex;
+  width: 100%;
+  padding: 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 50%;
+  gap: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.about-subtitle {
+  font-size: 0.7em;
+  color: #666;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.about-title {
+  font-size: 2.5em;
+  margin: 10px 0;
+  color: #333;
+  font-weight: 500;
+}
+
+.about-text-p {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #000000;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+
+
+.about-image {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+}
