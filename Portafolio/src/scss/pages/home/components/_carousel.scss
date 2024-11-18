@@ -16,9 +16,9 @@
 }
 
 .scroll div img {
-    width: 80px;
+    width: 50px;
     margin: 0 60px;
-    transition: 0.5s;
+    transition: transform 0.5s ease;
     cursor: pointer;
 }
 
@@ -32,5 +32,49 @@
     }
     100% {
         transform: translateX(-100%);
+    }
+}
+
+@media (min-width: 1200px) {
+    .scroll-content img {
+        width: 0px;
+        margin: 0 40px;
+    }
+
+    .scroll-content {
+        animation: scroll-animation 50s linear infinite;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    .scroll-content img {
+        width: 40px;
+        margin: 0 25px;
+    }
+
+    .scroll-content {
+        animation: scroll-animation 45s linear infinite;
+    }
+}
+
+@media (max-width: 767px) {
+    .scroll-content img {
+        width: 40px;
+        margin: 0 20px;
+    }
+
+    .scroll-content {
+        animation: scroll-animation 40s linear infinite;
+    }
+}
+
+@media (max-width: 480px) {
+    .scroll-content img {
+        width: 30px;
+        margin: 0 15px;
+    }
+
+    .scroll-content {
+        animation: scroll-animation 35s linear infinite;
     }
 }
