@@ -1,0 +1,104 @@
+.scroll {
+    grid-area: brand-carousel;
+    position: relative;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    mask-image: linear-gradient(90deg, #000000, #000000 10%, #000000 90%, #000000);
+}
+
+.carousel-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 220px;
+    margin-bottom: 50px;
+  
+    & .carousel-subtitle {
+      font-size: 0.6em;
+      color: #ffffff;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+  
+    & .carousel-title {
+      font-size: 2.5em;
+      margin: 10px 0;
+      color: #ffffff;
+      font-weight: 500;
+    }
+  }
+  
+
+.scroll div {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: animate 50s linear infinite;
+}
+
+.scroll div img {
+    width: 50px;
+    margin: 0 60px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+.scroll:hover div {
+    animation-play-state: paused;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (min-width: 1200px) {
+    .scroll-content img {
+        width: 0px;
+        margin: 0 40px;
+    }
+
+    .scroll-content {
+        animation: scroll-animation 50s linear infinite;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    .scroll-content img {
+        width: 40px;
+        margin: 0 25px;
+    }
+
+    .scroll-content {
+        animation: scroll-animation 45s linear infinite;
+    }
+}
+
+@media (max-width: 767px) {
+    .scroll-content img {
+        width: 40px;
+        margin: 0 20px;
+    }
+
+    .scroll-content {
+        animation: scroll-animation 40s linear infinite;
+    }
+}
+
+@media (max-width: 480px) {
+    .scroll-content img {
+        width: 30px;
+        margin: 0 15px;
+    }
+
+    .scroll-content {
+        animation: scroll-animation 35s linear infinite;
+    }
+}
