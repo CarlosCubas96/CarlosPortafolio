@@ -29,8 +29,7 @@ h4 {
 h5 {
     font-weight: 400;
 }
-
-body {
+.body-index {
     background-color: black;
     font-family: "Helvetica", "Fabric Sans", sans-serif;
     display: grid;
@@ -44,5 +43,16 @@ body {
 
         "brand-carousel"
         "footer";
+}
 
+.body-proyect {
+    font-family: "Helvetica", "Fabric Sans", sans-serif;
+    display: grid;
+    grid-template-areas:
+        "second-header second-header"
+        "sidebar main";
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 70px 1fr;
+    height: 100vh;
+    background-color: #000000;
 }

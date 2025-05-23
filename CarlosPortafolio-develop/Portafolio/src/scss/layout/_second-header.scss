@@ -1,0 +1,39 @@
+.second-header {
+    grid-area: second-header;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px;
+    background-color: #000000;
+}
+
+.second-header div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.second-header__logo {
+    width: 112px;
+    height: auto;
+}
+
+.second-header div h1 {
+    color: #B74D1A;
+    font-family: 'Inter';
+    font-weight: bolder;
+    font-size: 16.2px;
+
+}
+
+
+.second-header__close {
+    width: 18px;
+    height: 18px;
+    margin: 0 10px;
+    font-size: 1.2em;
+    color: #fff;
+    transition: color 0.3s;
+}

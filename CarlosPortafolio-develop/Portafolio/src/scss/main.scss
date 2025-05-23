@@ -5,6 +5,8 @@
 // Layout
 @use "./layout/footer";
 @use "./layout/header";
+@use "./layout/second-header";
+
 
 // Components
 @use "./components/buttons";
@@ -19,3 +21,204 @@
 @use "./pages/home/components/carousel";
 @use "./pages/home/components/contact";
 @use "./pages/home/components/projects";
+
+
+/* Sidebar */
+.sidebar {
+    grid-area: sidebar;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+}
+
+.sidebar {
+    position: relative;
+}
+
+.sidebar-indicator {
+    position: absolute;
+    left: 70px;
+    width: 1px;
+    height: 40px;
+    background-color: #ff8000;
+    border-radius: 2px;
+    transition: top 0.3s ease;
+    z-index: 10;
+}
+
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.sidebar-menu li {
+    margin-bottom: 3rem;
+}
+
+.sidebar-menu a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.4);
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 12.5px;
+    letter-spacing: 0.2em;
+}
+
+.sidebar-menu a:hover {
+    color: #ff8000;
+}
+
+/* Secciones del contenido */
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}
+
+
+
+.main-proyect {
+    //cursor: url('../assets/cursors/flecha.png'), auto;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+
+    height: 92vh;
+    overflow-y: scroll;
+
+    scroll-snap-type: y mandatory;
+
+    /* Puedes mantener esta línea o quitarla si usas solo JS para el scroll suave */
+    scroll-behavior: smooth;
+    /* Ocultar la scrollbar */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+}
+
+.main-proyect::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari y Opera */
+}
+
+
+
+.sidebar-menu li a.active {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.scroll-line {
+    position: fixed;
+    top: 0;
+    left: 70px;
+    width: 2px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+//======================================================
+
+
+.main-project__header {
+    margin-bottom: 3rem;
+}
+
+.main-project__header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.main-project__header p {
+    width: 100%;
+    font-size: 1rem;
+    color: #dddddd;
+    max-width: 700px;
+}
+
+.main-project__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.main-project__flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.main-project__box h3 {
+    width: 400px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #444;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.main-project__box ul {
+    list-style: disc;
+}
+
+.main-project__box li {
+    margin-bottom: 0.7rem;
+    color: #A1988D;
+    font-size: 0.95rem;
+}
+
+
+
+
+
+
+
+
+.section__inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: inherit;
+
+}
+
+.section__inner p {
+    font-size: 14.2px;
+    color: #9f9f9f;
+
+}
+
+
+
+
+
+.section__inner h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #C9C7C6;
+    /* mismo color que los links */
+}
+
+
+
+.section__inner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

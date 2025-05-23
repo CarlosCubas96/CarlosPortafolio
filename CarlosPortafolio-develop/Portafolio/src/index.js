@@ -1,6 +1,6 @@
 import './scss/main.scss';
 import 'remixicon/fonts/remixicon.css'
+import './jsLoader';
 
-import '../src/js/gallery'
+console.log('JS general cargado');
 
-console.log('Portfolio cargado correctamente');

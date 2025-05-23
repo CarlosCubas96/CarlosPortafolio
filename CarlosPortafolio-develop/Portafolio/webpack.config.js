@@ -40,15 +40,15 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/pages/index.html',
-      filename: 'index.html',
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/pages/about.html',
-      filename: 'about.html',
-    }),
-  ],
+     new HtmlWebpackPlugin({
+       template: './src/pages/index.html',
+       filename: 'index.html',
+     }),
+     new HtmlWebpackPlugin({
+       template: './src/pages/about.html',
+       filename: 'about.html',
+     }),
+   ],
   devServer: {
     static: './dist',
     port: 9001,
