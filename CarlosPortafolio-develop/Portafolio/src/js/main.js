@@ -1,4 +1,4 @@
-console.log('Home JS cargado');
+console.log('Main JS cargado');
 
 document.addEventListener("DOMContentLoaded", function () {
     const gallery = document.querySelector(".gallery");

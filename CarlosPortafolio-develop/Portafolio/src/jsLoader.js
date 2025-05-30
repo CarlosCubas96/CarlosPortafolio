@@ -5,8 +5,8 @@ switch (page) {
   case 'index':
     import('./js/main.js');
     break;
-  case 'about':
-    import('./js/about.js');
+  case 'proyect-1':
+    import('./js/proyect.js');
     break;
   default:
     console.log('Sin script específico');
